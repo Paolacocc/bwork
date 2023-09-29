@@ -1,0 +1,67 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+// colors
+$grey:#5e5e5e;
+$dark-grey:#333333;
+$sand:#f3d3bd;
+$green:#83c5be;
+$white:#fcfaf9;
+
+.container {
+    width: 100%;
+    height: 150px;
+    background-color: $dark-grey; 
+.row {
+    h2 {
+        padding: 50px;
+        color: #fcfaf9;
+        text-align: center;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .main-img {
+        width: 100%;
+        height: 816px;
+        background-image: url(../img/bkg-img.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .card-login {
+            border-radius: 10px;
+            width: 324px;
+            height: 456px;
+            background-color: #fcfaf9;
+            .card-content {
+                width: 208px;
+                height: 356px;
+                input {
+                    text-align: center;
+                    background-color: lightgray;
+                }
+                .btn-sand {
+                    background-color: #f3d3bd;    
+                    color: #333333;
+                font-weight: bold; 
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+
+    }
+}
+.logo-small {
+    width: ;
+}
+}
