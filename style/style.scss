@@ -14,7 +14,7 @@ $sand:#f3d3bd;
 $green:#83c5be;
 $white:#fcfaf9;
 
-.container {
+.ms_container {
     width: 100%;
     height: 150px;
     background-color: $dark-grey; 
@@ -61,7 +61,49 @@ $white:#fcfaf9;
 
     }
 }
-.logo-small {
-    width: ;
+.message-page {
+    height: 150px;
+    .logo-small {
+        width: 150px;
+        
+    }
+}
+.page-top {
+    width: 100%;
+    height: 50px;
+    background-color: #f3d3bd;
+    position: relative;
+    .back-arrow {
+        position: absolute;
+        left: 20px;
+    }
+}
+.ms_card {
+    padding: 5%;
+    .ms_table {
+        border:1px solid lightgray;
+        
+        th {
+            background-color: #83c5be;
+            color: #fcfaf9;
+        }
+    }
+}
+.desktop-part {
+    display: none;
+    thead {
+        th {
+            background-color: #83c5be;
+            color: #fcfaf9;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .mobile-part {
+        display: none;
+    }
+    .desktop-part {
+        display: block;
+    }
 }
 }
