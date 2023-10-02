@@ -97,10 +97,36 @@ img {
       display: none; }
     .ms_container .desktop-part {
       display: block; } }
-  .ms_container .ms_textarea {
-    height: 200px; }
-  .ms_container .btn-sand {
-    background-color: #f3d3bd;
-    color: #333333;
-    font-weight: bold;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
+  .ms_container .moving-part {
+    background-color: #333333;
+    width: 100%;
+    height: 100vh; }
+    .ms_container .moving-part .two-items {
+      width: 80%;
+      margin: 0 auto; }
+      .ms_container .moving-part .two-items .research {
+        display: flex;
+        justify-content: center; }
+      .ms_container .moving-part .two-items .ms_form {
+        display: flex;
+        flex-direction: column; }
+        .ms_container .moving-part .two-items .ms_form .ms_text {
+          display: flex;
+          flex-direction: column; }
+        .ms_container .moving-part .two-items .ms_form .ms_textarea {
+          height: 200px; }
+        .ms_container .moving-part .two-items .ms_form .btn-sand {
+          background-color: #f3d3bd;
+          color: #333333;
+          font-weight: bold;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
+  @media screen and (min-width: 768px) {
+    .ms_container .two-items {
+      display: flex;
+      margin: auto; }
+      .ms_container .two-items .research {
+        width: 30%;
+        align-items: flex-start;
+        margin-top: 35px; }
+      .ms_container .two-items .ms_form {
+        width: 70%; } }
