@@ -140,11 +140,28 @@ $white:#fcfaf9;
     }
     }
     @media screen and (min-width: 768px) {
+
+        
         .mobile-part-dark {
             display: none;
+            
         }
         .desktop-part {
             display: block;
+            .btn-green {
+                position: absolute;
+                left: 70%;
+                font-size: small;
+                background-color: #83c5be;
+            }
+            .btn-pink {
+                font-size: small;
+                position: absolute;
+                left: 70%;
+                border-color: #fcfaf9;
+                color: #fcfaf9;
+                background-color: #333333;
+            }
         }
     }
 //new chat page 
