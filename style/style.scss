@@ -61,7 +61,9 @@ $white:#fcfaf9;
 
     }
 }
-.message-page {
+
+//messages details page
+.messagedetails-page {
     height: 150px;
     .logo-small {
         width: 150px;
@@ -78,11 +80,15 @@ $white:#fcfaf9;
         left: 20px;
     }
 }
+.mobile-part {
+    background-color: #333333;
+}
 .ms_card {
     padding: 5%;
+    
     .ms_table {
         border:1px solid lightgray;
-        
+        background-color: #fcfaf9;
         th {
             background-color: #83c5be;
             color: #fcfaf9;
@@ -105,5 +111,50 @@ $white:#fcfaf9;
     .desktop-part {
         display: block;
     }
+}
+
+//messages page
+.message-page {
+    height: 150px;
+    .logo-small {
+        width: 150px;
+        
+    }
+}
+    .mobile-part-dark {
+        background-color: #333333;
+        height: 100vh;
+        .btn-green {
+            background-color: #83c5be;
+            
+        }
+        .btn-pink {
+            background-color: #f3d3bd;
+            color: #333333;
+        }
+     .message {
+        background-color: #fcfaf9;
+     }
+    .desktop-part {
+        display: none;
+    }
+    }
+    @media screen and (min-width: 768px) {
+        .mobile-part-dark {
+            display: none;
+        }
+        .desktop-part {
+            display: block;
+        }
+    }
+//new chat page 
+.ms_textarea {
+    height: 200px;
+}
+.btn-sand {
+    background-color: #f3d3bd;    
+    color: #333333;
+font-weight: bold; 
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 }

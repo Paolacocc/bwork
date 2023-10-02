@@ -44,9 +44,9 @@ img {
           color: #333333;
           font-weight: bold;
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
-  .ms_container .message-page {
+  .ms_container .messagedetails-page {
     height: 150px; }
-    .ms_container .message-page .logo-small {
+    .ms_container .messagedetails-page .logo-small {
       width: 150px; }
   .ms_container .page-top {
     width: 100%;
@@ -56,10 +56,13 @@ img {
     .ms_container .page-top .back-arrow {
       position: absolute;
       left: 20px; }
+  .ms_container .mobile-part {
+    background-color: #333333; }
   .ms_container .ms_card {
     padding: 5%; }
     .ms_container .ms_card .ms_table {
-      border: 1px solid lightgray; }
+      border: 1px solid lightgray;
+      background-color: #fcfaf9; }
       .ms_container .ms_card .ms_table th {
         background-color: #83c5be;
         color: #fcfaf9; }
@@ -73,3 +76,31 @@ img {
       display: none; }
     .ms_container .desktop-part {
       display: block; } }
+  .ms_container .message-page {
+    height: 150px; }
+    .ms_container .message-page .logo-small {
+      width: 150px; }
+  .ms_container .mobile-part-dark {
+    background-color: #333333;
+    height: 100vh; }
+    .ms_container .mobile-part-dark .btn-green {
+      background-color: #83c5be; }
+    .ms_container .mobile-part-dark .btn-pink {
+      background-color: #f3d3bd;
+      color: #333333; }
+    .ms_container .mobile-part-dark .message {
+      background-color: #fcfaf9; }
+    .ms_container .mobile-part-dark .desktop-part {
+      display: none; }
+  @media screen and (min-width: 768px) {
+    .ms_container .mobile-part-dark {
+      display: none; }
+    .ms_container .desktop-part {
+      display: block; } }
+  .ms_container .ms_textarea {
+    height: 200px; }
+  .ms_container .btn-sand {
+    background-color: #f3d3bd;
+    color: #333333;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }

@@ -27,6 +27,17 @@ const routes = {
 		title: "Messages | " + pageTitle,
 		description: "Messages page",
 	},
+	messagesdetails: {
+		template: "components/messagesdetails.html",
+		title: "MessagesDetails | " + pageTitle,
+		description: "Messages details page",
+	},
+	newchat: {
+		template: "components/newchat.html",
+		title: "NewChat | " + pageTitle,
+		description: "New chat page",
+	},
+
 };
 
 // create a function that watches the url and calls the urlLocationHandler
