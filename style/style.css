@@ -11,7 +11,7 @@ img {
   width: 100%;
   height: 150px;
   background-color: #333333; }
-  .ms_container .row h2 {
+  .ms_container h2 {
     padding: 50px;
     color: #fcfaf9;
     text-align: center;
@@ -19,126 +19,190 @@ img {
     font-size: 32px;
     font-style: normal;
     font-weight: 700; }
-  .ms_container .row .main-img {
+  .ms_container .mobile {
     width: 100%;
     height: 816px;
     background-image: url(../img/bkg-img.jpg);
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .ms_container .row .main-img .card-login {
+    flex-direction: column;
+    align-items: center; }
+    .ms_container .mobile img {
+      width: 60%;
+      margin-top: 50px; }
+    .ms_container .mobile .card-login {
+      margin-top: 50px;
       border-radius: 10px;
       width: 324px;
       height: 456px;
       background-color: #fcfaf9; }
-      .ms_container .row .main-img .card-login .card-content {
-        width: 208px;
+      .ms_container .mobile .card-login .card-content {
+        width: 80%;
+        margin: 0 auto;
         height: 356px; }
-        .ms_container .row .main-img .card-login .card-content input {
+        .ms_container .mobile .card-login .card-content input {
           text-align: center;
           background-color: lightgray; }
-        .ms_container .row .main-img .card-login .card-content .btn-sand {
+        .ms_container .mobile .card-login .card-content .btn-sand {
           background-color: #f3d3bd;
           color: #333333;
           font-weight: bold;
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
-  .ms_container .messagedetails-page {
-    height: 150px; }
-    .ms_container .messagedetails-page .logo-small {
-      width: 150px; }
-  .ms_container .page-top {
+  .ms_container .home-desktop {
+    display: none !important;
     width: 100%;
-    height: 50px;
-    background-color: #f3d3bd;
-    position: relative; }
-    .ms_container .page-top .back-arrow {
-      position: absolute;
-      left: 20px; }
-  .ms_container .mobile-part {
-    background-color: #333333; }
-  .ms_container .ms_card {
-    padding: 5%; }
-    .ms_container .ms_card .ms_table {
-      border: 1px solid lightgray;
-      background-color: #fcfaf9; }
-      .ms_container .ms_card .ms_table th {
-        background-color: #83c5be;
-        color: #fcfaf9; }
-  .ms_container .desktop-part {
-    display: none; }
-    .ms_container .desktop-part thead th {
+    height: 816px;
+    background-image: url(../img/bkg-img.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .ms_container .home-desktop img {
+      width: 40%;
+      margin-top: 50px; }
+    .ms_container .home-desktop .form-part {
+      display: flex;
+      justify-content: space-around; }
+      .ms_container .home-desktop .form-part .card-desktop-big {
+        margin-top: 50px;
+        border-radius: 10px;
+        padding: 50px;
+        width: 40%;
+        background-color: #fcfaf9; }
+        .ms_container .home-desktop .form-part .card-desktop-big .card-content input {
+          text-align: center;
+          background-color: lightgray; }
+        .ms_container .home-desktop .form-part .card-desktop-big .card-content .btn-sand {
+          background-color: #f3d3bd;
+          color: #333333;
+          font-weight: bold;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
+      .ms_container .home-desktop .form-part .card-desktop-small {
+        margin-top: 50px;
+        border-radius: 10px;
+        padding: 50px;
+        background-color: #fcfaf9; }
+        .ms_container .home-desktop .form-part .card-desktop-small .card-content input {
+          text-align: center;
+          background-color: lightgray; }
+        .ms_container .home-desktop .form-part .card-desktop-small .card-content .btn-sand {
+          background-color: #f3d3bd;
+          color: #333333;
+          font-weight: bold;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
+  @media screen and (min-width: 768px) {
+    .ms_container .mobile {
+      display: none; }
+    .ms_container .home-desktop {
+      display: block !important;
+      width: 100%; } }
+
+.messagedetails-page {
+  height: 150px; }
+  .messagedetails-page .logo-small {
+    width: 150px; }
+
+.page-top {
+  width: 100%;
+  height: 50px;
+  background-color: #f3d3bd;
+  position: relative; }
+  .page-top .back-arrow {
+    position: absolute;
+    left: 20px; }
+
+.mobile-part {
+  background-color: #333333; }
+
+.ms_card {
+  padding: 5%; }
+  .ms_card .ms_table {
+    border: 1px solid lightgray;
+    background-color: #fcfaf9; }
+    .ms_card .ms_table th {
       background-color: #83c5be;
       color: #fcfaf9; }
-  @media screen and (min-width: 768px) {
-    .ms_container .mobile-part {
-      display: none; }
-    .ms_container .desktop-part {
-      display: block; } }
-  .ms_container .message-page {
-    height: 150px; }
-    .ms_container .message-page .logo-small {
-      width: 150px; }
-  .ms_container .mobile-part-dark {
-    background-color: #333333;
-    height: 100vh; }
-    .ms_container .mobile-part-dark .btn-green {
+
+.desktop-part {
+  display: none; }
+  .desktop-part thead th {
+    background-color: #83c5be;
+    color: #fcfaf9; }
+
+@media screen and (min-width: 768px) {
+  .mobile-part {
+    display: none; }
+  .desktop-part {
+    display: block; } }
+
+.message-page {
+  height: 150px; }
+  .message-page .logo-small {
+    width: 150px; }
+
+.mobile-part-dark {
+  background-color: #333333;
+  height: 100vh; }
+  .mobile-part-dark .btn-green {
+    background-color: #83c5be; }
+  .mobile-part-dark .btn-pink {
+    background-color: #f3d3bd;
+    color: #333333; }
+  .mobile-part-dark .message {
+    background-color: #fcfaf9; }
+  .mobile-part-dark .desktop-part {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+  .mobile-part-dark {
+    display: none; }
+  .desktop-part {
+    display: block; }
+    .desktop-part .btn-green {
+      position: absolute;
+      left: 70%;
+      font-size: small;
       background-color: #83c5be; }
-    .ms_container .mobile-part-dark .btn-pink {
-      background-color: #f3d3bd;
-      color: #333333; }
-    .ms_container .mobile-part-dark .message {
-      background-color: #fcfaf9; }
-    .ms_container .mobile-part-dark .desktop-part {
-      display: none; }
-  @media screen and (min-width: 768px) {
-    .ms_container .mobile-part-dark {
-      display: none; }
-    .ms_container .desktop-part {
-      display: block; }
-      .ms_container .desktop-part .btn-green {
-        position: absolute;
-        left: 70%;
-        font-size: small;
-        background-color: #83c5be; }
-      .ms_container .desktop-part .btn-pink {
-        font-size: small;
-        position: absolute;
-        left: 70%;
-        border-color: #fcfaf9;
-        color: #fcfaf9;
-        background-color: #333333; } }
-  .ms_container .moving-part {
-    background-color: #333333;
-    width: 100%;
-    height: 100vh; }
-    .ms_container .moving-part .two-items {
-      width: 80%;
-      margin: 0 auto; }
-      .ms_container .moving-part .two-items .research {
-        display: flex;
-        justify-content: center; }
-      .ms_container .moving-part .two-items .ms_form {
+    .desktop-part .btn-pink {
+      font-size: small;
+      position: absolute;
+      left: 70%;
+      border-color: #fcfaf9;
+      color: #fcfaf9;
+      background-color: #333333; } }
+
+.moving-part {
+  background-color: #333333;
+  width: 100%;
+  height: 100vh; }
+  .moving-part .two-items {
+    width: 80%;
+    margin: 0 auto; }
+    .moving-part .two-items .research {
+      display: flex;
+      justify-content: center; }
+    .moving-part .two-items .ms_form {
+      display: flex;
+      flex-direction: column; }
+      .moving-part .two-items .ms_form .ms_text {
         display: flex;
         flex-direction: column; }
-        .ms_container .moving-part .two-items .ms_form .ms_text {
-          display: flex;
-          flex-direction: column; }
-        .ms_container .moving-part .two-items .ms_form .ms_textarea {
-          height: 200px; }
-        .ms_container .moving-part .two-items .ms_form .btn-sand {
-          background-color: #f3d3bd;
-          color: #333333;
-          font-weight: bold;
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
-  @media screen and (min-width: 768px) {
-    .ms_container .two-items {
-      display: flex;
-      margin: auto; }
-      .ms_container .two-items .research {
-        width: 30%;
-        align-items: flex-start;
-        margin-top: 35px; }
-      .ms_container .two-items .ms_form {
-        width: 70%; } }
+      .moving-part .two-items .ms_form .ms_textarea {
+        height: 200px; }
+      .moving-part .two-items .ms_form .btn-sand {
+        background-color: #f3d3bd;
+        color: #333333;
+        font-weight: bold;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
+
+@media screen and (min-width: 768px) {
+  .two-items {
+    display: flex;
+    margin: auto; }
+    .two-items .research {
+      width: 30%;
+      align-items: flex-start;
+      margin-top: 35px; }
+    .two-items .ms_form {
+      width: 70%; } }
