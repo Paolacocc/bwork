@@ -48,13 +48,13 @@ const locationHandler = async () => {
 	if (location.length == 0) {
 		location = "/";
 	}
-    console.log(location);
+    
 	// get the route object from the routes object
 	const route = routes[location] || routes["404"];
 	// get the html from the template
-    console.log('ciao1');
+    
 	const html = await fetch(route.template).then((response) => response.text());
-    console.log('ciao2');
+
 	// set the content of the content div to the html
 	document.getElementById("content").innerHTML = html;
 	// set the title of the document to the title of the route
@@ -72,3 +72,24 @@ locationHandler();
 const changeRoute = (url) => {
     window.location.hash = url
 }
+
+//filter 
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  function filterFunction() {
+	var input, filter, ul, li, a, i;
+	input = document.getElementById("myInput");
+	filter = input.value.toUpperCase();
+	div = document.getElementById("myDropdown");
+	a = div.getElementsByTagName("a");
+	for (i = 0; i < a.length; i++) {
+	  txtValue = a[i].textContent || a[i].innerText;
+	  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		a[i].style.display = "";
+	  } else {
+		a[i].style.display = "none";
+	  }
+	}
+  }

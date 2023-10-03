@@ -4,18 +4,45 @@
         <img class="logo-small" src="img/BWork.png" alt="">
     </div>
     <div class="page-top d-flex justify-content-center align-items-center">
-        <h6 onclick="changeRoute('/')" " class="back-arrow">< </h6>
+        <h6 onclick="changeRoute('messages')" " class="back-arrow">< </h6>
         <h6 class=" text-uppercase">crea una nuova conversazione</h6>
     </div>
     <div class="moving-part pt-4">
         <div class="two-items">
 
             <div class="research ">
+
+                <!-- prova2  just html-->
+                <!-- <input list="names" placeholder="cerca contatti...">
+                <datalist id="names">
+                    <option>paola</option>
+                    <option>paolo</option>
+                    <option>luca</option>
+                    <option>giulio</option>
+
+                </datalist> -->
+
+
+
+                <!-- //prove// -->
+                <div class="dropdown">
+                   
+                    <button onclick="myFunction()" type="button" class="btn btn-outline-light mb-3 text-uppercase dropbtn">
+                        <i class="fa-solid fa-magnifying-glass p-2"></i>
+                    cerca contatti 
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input type="text" placeholder="Cerca.." id="myInput" onkeyup="filterFunction()">
+                      <a href="">John</a>
+                      <a href="">Paul</a>
+                      <a href="">Jessica</a>
+                      <a href="">Mirco</a>
+                      <a href="">Paola</a>
+                      
+                    </div>
+                  </div>
                 
-                <button  type="button" class="btn btn-outline-light mb-3 text-uppercase ">
-                    <i class="fa-solid fa-magnifying-glass p-2"></i>
-                cerca contatti 
-                </button>
+                
             </div>
             <div class="ms_form">
 

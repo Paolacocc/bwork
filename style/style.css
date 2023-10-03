@@ -97,6 +97,31 @@ img {
     .ms_container .home-desktop {
       display: block !important;
       width: 100%; } }
+  .ms_container .main-img {
+    width: 100%;
+    height: 816px;
+    background-image: url(../img/bkg-img.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .ms_container .main-img .card-login {
+      border-radius: 10px;
+      width: 324px;
+      height: 456px;
+      background-color: #fcfaf9; }
+      .ms_container .main-img .card-login .card-content {
+        width: 208px;
+        height: 356px; }
+        .ms_container .main-img .card-login .card-content input {
+          text-align: center;
+          background-color: lightgray; }
+        .ms_container .main-img .card-login .card-content .btn-sand {
+          background-color: #f3d3bd;
+          color: #333333;
+          font-weight: bold;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
 
 .messagedetails-page {
   height: 150px; }
@@ -142,8 +167,7 @@ img {
     width: 150px; }
 
 .mobile-part-dark {
-  background-color: #333333;
-  height: 100vh; }
+  background-color: #333333; }
   .mobile-part-dark .btn-green {
     background-color: #83c5be; }
   .mobile-part-dark .btn-pink {
@@ -182,6 +206,36 @@ img {
     .moving-part .two-items .research {
       display: flex;
       justify-content: center; }
+      .moving-part .two-items .research .dropdown {
+        position: relative;
+        display: inline-block; }
+        .moving-part .two-items .research .dropdown .dropbtn:hover,
+        .moving-part .two-items .research .dropdown .dropbtn:focus {
+          background-color: #83c5be; }
+        .moving-part .two-items .research .dropdown .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #fcfaf9;
+          min-width: 230px;
+          overflow: auto;
+          border: 1px solid #ddd;
+          z-index: 1; }
+          .moving-part .two-items .research .dropdown .dropdown-content a {
+            color: #333333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block; }
+          .moving-part .two-items .research .dropdown .dropdown-content a:hover {
+            background-color: #5e5e5e; }
+          .moving-part .two-items .research .dropdown .dropdown-content #myInput {
+            font-size: 16px;
+            padding: 14px 20px 12px 45px;
+            border: none;
+            border-bottom: 1px solid #ddd; }
+          .moving-part .two-items .research .dropdown .dropdown-content #myInput:focus {
+            outline: 3px solid #ddd; }
+        .moving-part .two-items .research .dropdown .show {
+          display: block; }
     .moving-part .two-items .ms_form {
       display: flex;
       flex-direction: column; }
